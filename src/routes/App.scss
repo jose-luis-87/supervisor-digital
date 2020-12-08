@@ -1,0 +1,315 @@
+@import '../scss/index.scss';
+
+/*Generales*/
+
+body {
+    background-color: $bg-dark-color;
+    font-family: 'Montserrat', sans-serif;
+    color: $white-text;
+    overflow: hidden;
+}
+
+/*Estilos Login*/
+
+.inputform {
+     color: #fff;
+     background-color: transparent;
+     border: 2px solid #fff;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 600;
+     border: 0px 0px 2px 0px solid white;
+}
+
+.btnSesion{
+     background-color: $yellow-btn;
+     padding: 4px 8px 4px 8px;
+     color: $bg-dark-color;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 12px;
+     font-weight: bold;
+     border: none;
+     border-radius: 40px;
+}
+.containerForm{
+     
+     width: 100%;
+     height: 100vh;
+     margin: 0;
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: center;
+     align-self: center;
+     align-items: center;
+     
+}
+
+.columGraphic{
+     background-color: $green-global;
+     width: 400px;
+     height: 400px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: flex-end;
+}
+
+.columForm{
+     background-color: $bg-gray-color;
+     width: 400px;
+     height: 400px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.containerBtn{
+     display: flex;
+     flex-wrap: nowrap;
+     margin: 12px 0px 0px 0px;
+     align-items: center;
+     p{
+          font-size: 8px;
+          color: $white-text;
+          margin: 0px 8px 0px 0px;
+     }
+}
+/*Estilos navbar search*/
+
+.navbar{
+     width: 100%;
+     display: flex;
+     flex-wrap: nowrap;
+     position: relative;
+}
+
+.logo{
+     width: 50%;
+     margin: 0px 0px 0px 40px;
+}
+
+.search{
+     width: 50%;
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: flex-end;
+     align-items: center;
+     padding: 0px 40px 0px 0px;
+     p{
+          margin: 0px 12px 0px 0px;
+          color: $yellow-btn;
+          font-weight: bold;
+     }
+}
+
+/*CONTAINAR DASH HOME*/
+
+.containerdash{
+     display: flex;
+     flex-wrap: nowrap;
+     margin: 40px 40px 0px 40px;
+     h2{
+          font-family: 'Montserrat', sans-serif;
+          font-size: 16px;
+          font-weight: normal; 
+     }
+}
+
+.containerBar{
+     margin-bottom: 28px;
+     #br {
+          width: 100%;
+          height: 1px;
+          background-color: $white-text; 
+     }
+}
+
+.desarrollos{
+     background-color: $bg-gray-color;
+     height: 400px;
+}
+
+.panelDesarrollos{
+     width: 55%;
+     padding: 0px 40px 0px 0px;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 12px;
+     font-weight: normal;
+}
+
+.panelStats{
+     width: 45%;
+     display: flex;
+     flex-wrap: nowrap;
+}
+
+.asesores{
+     width: 50%;
+     h2{
+          width: 50%;
+     }
+}
+
+.chartAnimo{
+     width: 50%;
+     h2{
+          width: 50%;
+     }
+}
+
+.descBar{
+     display: flex;
+     flex-wrap: nowrap;
+     padding: 0px 40px 0px 0px;
+     margin-bottom: 8px;
+     p{
+          width: 50%;
+     }
+}
+
+.camIcons{
+     width: 50%;
+}
+
+.camaras{
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: flex-end;
+     align-items: flex-start;
+}
+
+
+.cam{
+     display: flex;
+     flex-wrap: nowrap;
+     align-items: flex-start;
+     margin: 0px 0px 0px 20px;
+     h3{
+          margin: 2px 8px 0px 0px;
+          font-size: 16px;
+          font-weight: bold;
+     }
+     p{
+          font-size: 8px;
+          margin: -4px 0px 0px 0px;
+     }
+}
+
+
+
+.slide-content {
+     padding: 0px 0px 0px 0px;
+     margin: 0px 0px 40px 0px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     width: 180px;
+     height: 160px;
+     background-color: $bg-gray-color;
+     border-radius: 16px;
+     h2{
+          font-weight: bold;
+          
+     }
+     
+}
+
+.supervisor{
+     display: flex;
+     flex-wrap: nowrap;
+     margin: 0px 0px 0px 0px;
+     
+     h4{
+          margin: 2px 0px 0px 0px;
+          font-size: 10px;
+          font-weight: normal;
+          text-align: right;
+          width: 60%;
+     }
+     p{
+          font-size: 8px;
+          margin: -4px 0px 0px 0px;
+     }
+
+     
+}
+
+.persons{
+     width: 100%;
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: center;
+     align-items: center;
+     margin: 12px 0px 0px 12px;
+     h4{
+          margin: 2px 16px 0px 0px;
+          font-size: 10px;
+          font-weight: normal;
+          text-align: center;
+          
+     }
+     span {
+          font-weight: bold;
+          font-size: 12;
+          margin: 0px 4px 0px 0px;
+     }
+
+     
+}
+.iconLocation {
+     display: flex;
+     flex-direction: column;
+     margin: 0px 0px 0px 20px;
+     p{
+          font-size: 8px;
+          margin: 4px 0px 0px 0px;
+     }
+     
+
+}
+
+.edificio {
+     position: absolute;
+     margin: 20px 0px 0px 0px;
+}
+
+.open{
+     display: flex;
+     font-size: 8px;
+
+}
+
+/*cards asesores*/
+.cardUser {
+     display: flex;
+     margin: 0px 20px 20px 0px;
+     justify-content: center;
+     border-radius: 16px;
+     width: 300px;
+     height: auto;
+     background-color: $bg-gray-color;
+}
+.user{
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: flex-start;
+     width: 100%;
+     img{
+          margin-top: 10px;
+          max-width: 40px;
+          border-radius: 50px;
+     }
+}
+
+.avatar{
+     margin: 0px 12px 0px 12px;
+}
+.datos {
+     width: 50%;
+     h2 {
+          width: 100%;
+     }
+     p {
+          font-size: 10px;
+          margin: -10px 0px 0px 0px;
+     }
+}
