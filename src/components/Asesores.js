@@ -46,9 +46,7 @@ function Asesores() {
                                    <p>{asesor.puntoventa}</p>
                               </div>
                               
-                         </div>
-                         
-
+                         </div> 
                     </div>
                )
 
