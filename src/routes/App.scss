@@ -7,7 +7,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: $white-text;
     overflow: hidden;
+    
 }
+
+
 
 /*Estilos Login*/
 
@@ -106,7 +109,7 @@ body {
 .containerdash{
      display: flex;
      flex-wrap: nowrap;
-     margin: 40px 40px 0px 40px;
+     margin: 12px 40px 0px 40px;
      h2{
           font-family: 'Montserrat', sans-serif;
           font-size: 16px;
@@ -140,13 +143,22 @@ body {
      width: 45%;
      display: flex;
      flex-wrap: nowrap;
+     height: 700px;
+     
 }
 
 .asesores{
-     width: 50%;
+     
+     height: 500px;
+     width: 45%;
      h2{
           width: 50%;
      }
+}
+
+.verticalSlide{
+     background-color: #fff;
+     height: 500px;
 }
 
 .chartAnimo{
@@ -203,7 +215,7 @@ body {
      flex-wrap: wrap;
      justify-content: center;
      width: 180px;
-     height: 160px;
+     height: 150px;
      background-color: $bg-gray-color;
      border-radius: 16px;
      h2{
@@ -281,10 +293,12 @@ body {
 /*cards asesores*/
 .cardUser {
      display: flex;
+     flex-direction: column;
      margin: 0px 20px 20px 0px;
+     padding: 0px;
      justify-content: center;
      border-radius: 16px;
-     width: 300px;
+     width: auto;
      height: auto;
      background-color: $bg-gray-color;
 }
@@ -301,15 +315,28 @@ body {
 }
 
 .avatar{
-     margin: 0px 12px 0px 12px;
+     margin: 0px 40px 0px 12px;
 }
 .datos {
      width: 50%;
      h2 {
           width: 100%;
+          font-weight: bold;
      }
      p {
           font-size: 10px;
           margin: -10px 0px 0px 0px;
+          opacity: 0.4;
      }
 }
+
+.containerProgress{
+     width: auto;
+     margin: 0px 0px 0px 0px;
+     padding: 8px;
+     label{
+          opacity: 0.4;
+          font-size: 12px;
+          margin-right: 64px; 
+     }
+ }
