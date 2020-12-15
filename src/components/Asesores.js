@@ -70,6 +70,7 @@ function Asesores() {
      return (
           
                <div>
+                    
                     {data.map(asesor=>(
                          
 
