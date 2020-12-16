@@ -11,8 +11,12 @@ const data = [
           puntoventa: 'PLUTARCO',
           promedio: 98,
           img: {imgUser},
-          bgcolor: "#00C853"
-          
+          bgcolor: "#00C853",
+          numeroPersonas: {
+               felices: 20,
+               neutrales: 24,
+               molestas: 8
+          }
      },
      {
           id: 2,
@@ -69,7 +73,7 @@ function Asesores() {
      
      return (
           
-               <div>
+               <div className="asesoresContainer">
                     
                     {data.map(asesor=>(
                          

@@ -1,5 +1,6 @@
 @import '../scss/index.scss';
 
+
 /*Generales*/
 
 body {
@@ -10,7 +11,10 @@ body {
     
 }
 
-
+.container {
+     margin-top: -10px;
+     padding: 0;
+}
 
 /*Estilos Login*/
 
@@ -80,14 +84,18 @@ body {
 
 .navbar{
      width: 100%;
+     margin: 0px 0px 40px 0px;
      display: flex;
      flex-wrap: nowrap;
      position: relative;
+     background-color: $bg-dark-color;
+     z-index: 999;
+     padding: 20px 0px 0px 0px;
 }
 
 .logo{
      width: 50%;
-     margin: 0px 0px 0px 40px;
+     margin: 0px 0px 0px 20px;
 }
 
 .search{
@@ -96,7 +104,7 @@ body {
      flex-wrap: nowrap;
      justify-content: flex-end;
      align-items: center;
-     padding: 0px 40px 0px 0px;
+     padding: 0px 20px 0px 0px;
      p{
           margin: 0px 12px 0px 0px;
           color: $yellow-btn;
@@ -109,21 +117,26 @@ body {
 .containerdash{
      display: flex;
      flex-wrap: nowrap;
-     margin: 12px 40px 0px 40px;
+     margin: 0;
+     padding: 0px 20px 0px 20px;
      h2{
           font-family: 'Montserrat', sans-serif;
-          font-size: 16px;
-          font-weight: normal; 
+          font-size: 14px;
+          font-weight: bold; 
      }
 }
 
 .containerBar{
      margin-bottom: 28px;
      #br {
-          width: 100%;
-          height: 1px;
-          background-color: $white-text; 
+          width: 90%;
+          height: .5px;
+          background-color: $bg-gray-color; 
      }
+}
+
+.containerChart{
+     border-radius: 0px 50px 50px 0px;
 }
 
 .desarrollos{
@@ -133,7 +146,7 @@ body {
 
 .panelDesarrollos{
      width: 55%;
-     padding: 0px 40px 0px 0px;
+     padding: 0px 0px 0px 0px;
      font-family: 'Montserrat', sans-serif;
      font-size: 12px;
      font-weight: normal;
@@ -144,21 +157,56 @@ body {
      display: flex;
      flex-wrap: nowrap;
      height: 700px;
+     margin: -8px 0px 0px 0px;
      
 }
 
 .asesores{
      
      height: 500px;
-     width: 45%;
+     width: 50%;
      h2{
-          width: 50%;
+          width: 60%;
+     }
+
+}
+
+.titleAsesores{
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     z-index: 20;
+     background-color: $bg-dark-color;
+     padding: 0px 0px 0px 40px;
+}
+
+.labelFilter{
+     p{
+          font-size: 10px;
+     }
+     span{
+          font-weight: bold;
+          color: $yellow-btn;
      }
 }
 
-.verticalSlide{
-     background-color: #fff;
-     height: 500px;
+.labelAnimo{
+     
+     p{
+          font-size: 10px;
+          margin-bottom: 44px;
+     }
+     span{
+          font-weight: bold;
+          color: $yellow-btn;
+     }
+}
+
+.asesoresContainer{
+     
+     margin-top: 14px;
+     border-right: 1px solid $bg-gray-color;
+     border-left: 1px solid $bg-gray-color;
 }
 
 .chartAnimo{
@@ -172,7 +220,7 @@ body {
      display: flex;
      flex-wrap: nowrap;
      padding: 0px 40px 0px 0px;
-     margin-bottom: 8px;
+     margin: 32px 0px 8px 0px ;
      p{
           width: 50%;
      }
@@ -206,24 +254,44 @@ body {
      }
 }
 
-
+.slider{
+     margin-bottom: 20px;
+}
 
 .slide-content {
      padding: 0px 0px 0px 0px;
-     margin: 0px 0px 40px 0px;
+     margin: 0px 0px 0px 0px;
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
-     width: 180px;
-     height: 150px;
+     width: 170px;
+     height: 140px;
      background-color: $bg-gray-color;
      border-radius: 16px;
      h2{
           font-weight: bold;
-          
+          margin: 8px 0px 4px 0px;
      }
      
 }
+
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+     content: 'prev';
+ }
+ .swiper-button-prev:after, .swiper-button-next:after {
+     font-family: swiper-icons;
+     font-size:1.4em;
+     text-transform: none !important;
+     letter-spacing: 0;
+     text-transform: none;
+     background-color:rgba($color:#000A12, $alpha: 0.8);
+     font-variant: initial;
+     line-height: 1;
+     color: $white-text;
+     height: 140px;
+     padding: 4px;
+     margin: 0;
+ }
 
 .supervisor{
      display: flex;
@@ -239,7 +307,7 @@ body {
      }
      p{
           font-size: 8px;
-          margin: -4px 0px 0px 0px;
+          margin: 0px 0px 0px 0px;
      }
 
      
@@ -251,7 +319,7 @@ body {
      flex-wrap: nowrap;
      justify-content: center;
      align-items: center;
-     margin: 12px 0px 0px 12px;
+     margin: 8px 0px 0px 12px;
      h4{
           margin: 2px 16px 0px 0px;
           font-size: 10px;
@@ -273,7 +341,7 @@ body {
      margin: 0px 0px 0px 20px;
      p{
           font-size: 8px;
-          margin: 4px 0px 0px 0px;
+          margin: 2px 0px 0px 0px;
      }
      
 
@@ -281,20 +349,21 @@ body {
 
 .edificio {
      position: absolute;
+     z-index: 0;
      margin: 20px 0px 0px 0px;
 }
 
 .open{
      display: flex;
      font-size: 8px;
-
 }
 
 /*cards asesores*/
+
 .cardUser {
      display: flex;
      flex-direction: column;
-     margin: 0px 20px 20px 0px;
+     margin: 12px;
      padding: 0px;
      justify-content: center;
      border-radius: 16px;
@@ -337,6 +406,146 @@ body {
      label{
           opacity: 0.4;
           font-size: 12px;
-          margin-right: 64px; 
+          margin-right: 100px; 
      }
  }
+
+
+ .containerCharts{
+     width: auto;
+     margin: 8px 0px 20px 0px;
+     padding: 0px;
+     display: flex;
+     flex-wrap: nowrap;
+     
+ }
+
+ /*estilos cutoms dropdown*/
+
+ .select-box--container {
+     height: 30px;
+     border: none;
+     background-color: $yellow-btn;
+     width: 100%;
+     margin: 0;
+     padding: 0;
+     border-radius: 50px;
+     
+
+   }
+   
+   
+   
+   .select-box--box {
+     position: relative;
+     width: 140px;
+     margin-bottom: 12px;
+     
+   }
+   
+   .select-box--selected-item {
+     color: $bg-dark-color;
+     display: inline-block;
+     font-size: 12px;
+     font-weight: bold;
+     height: 100%;
+     width: 100%;
+     padding: 8px 8px;
+     vertical-align: middle;
+     
+   }
+   
+   .select-box--items{
+          color: $bg-dark-color;
+          div {
+               font-size: 12px;
+          font-weight: bold;
+          border: none;
+          background-color: $yellow-btn;
+          padding: 6px;
+          padding-left: 20px;
+     }
+   } 
+   
+   .select-box--arrow {
+     width: 30px;
+     height: 30px;
+     margin: 0;
+     padding: 0px 4px 0px 0px;
+     display: inline-block;
+     background: $yellow-btn;
+     position: absolute;
+     right: 0;
+     top: 0;
+     border-radius: 50px;
+   }
+   
+   .select-box--arrow-down {
+     position: absolute;
+     top: 10px;
+     left: 10px;
+     
+     width: 0;
+     height: 0;
+     border-left: 8px solid transparent;
+     border-right: 8px solid transparent;
+     border-top: 10px solid $bg-dark-color;
+   }
+   
+   .select-box--arrow-up {
+     position: absolute;
+     top: 10px;
+     left: 10px;
+     margin-right: 10px; width: 0;
+     height: 0;
+     border-left: 8px solid transparent;
+     border-right: 8px solid transparent;
+     border-bottom: 10px solid $bg-dark-color;
+   }
+
+.chartAnimo{
+     h2{
+          margin-bottom: 60px;
+     }
+}
+
+.titleAnimo {
+     padding: 0px 0px 0px 40px;
+}
+
+.felices, .neutrales, .molestas {
+     margin-bottom: 34px;
+}
+
+.totalPersonas{
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+     text-align: right;
+     p {
+          font-size: 10px;
+          color: $yellow-btn;
+          padding: 0;
+          margin: 4px;
+     }
+     span {
+          font-weight: bold;
+          color: $white-text;
+     }
+}
+
+.total{
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: flex-end;
+     align-items: center;
+     h2 {
+          width: 25%;
+          margin: 14px 40px 0px 0px;
+     }
+     h1{
+          font-size: 40px;
+          margin: 12px 0px 0px 0px;
+          color: $yellow-btn;
+     }
+}

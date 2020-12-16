@@ -69,9 +69,9 @@ const data = [
 function Slider() {
      return (
           <Swiper
-               
-               spaceBetween={40}
-               slidesPerView={4}
+               className="slider"
+               spaceBetween={20}
+               slidesPerView={4.5}
                navigation
                onSlideChange={() => console.log('slide change')}
                onSwiper={(swiper) => console.log(swiper)
@@ -102,13 +102,13 @@ function Slider() {
                                    </div>
                               </div>
                               
-                              <Edificio width={210} opacity={0.2} className="edificio"/>
+                              
                               <div className="open">
                                    <p>Abierto</p>
                               </div>
+                              <Edificio width={170} opacity={0.2} className="edificio"/>
                               
                          </div>
-                        
                     </SwiperSlide>
                ))
           }
