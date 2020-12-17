@@ -12,17 +12,14 @@ import VerticalSwipeToSlide from '../components/VerticalSlide'
 
 
 
-const Home = () => {
+const Desarrollo = () => {
      return (
           <div className="container">
                <NavBar/>
                <div className="containerdash">
                     <div className="panelDesarrollos">
-                         <h2>PUNTOS DE VENTA</h2>
-                         <DescBar/>
-                        <SlideDesarrollos/>
-                        <SlideDesarrollos/>
-                        <SlideDesarrollos/>
+                         <h2>APERTURA Y CIERRE</h2>
+                         
                     </div>
                     <div className="panelStats">
                          <div className="asesores">
@@ -60,4 +57,4 @@ const Home = () => {
      )
 }
 
-export default Home
+export default Desarrollo

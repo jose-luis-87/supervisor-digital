@@ -1,5 +1,7 @@
 import React from 'react'
 import Feliz from './Feliz'
+import Molestia from './Molestia';
+import Neutral from './Neutral';
 
 export const ChartBar = (props) => {
 
@@ -53,11 +55,19 @@ export const ChartBar = (props) => {
 
                 )
 
-            case 'bgcolor2':
+            case '#0061B2':
 
                 return (
 
-                    <div>neutral</div>
+                   <Neutral width={40}/>
+
+                )
+
+            case '#FF8A01':
+
+                return (
+
+                   <Molestia width={40}/>
 
                 )
 
@@ -65,7 +75,7 @@ export const ChartBar = (props) => {
 
                 return (
 
-                    <div>molesto</div>
+                    <div></div>
 
                 )
 
