@@ -8,30 +8,49 @@ import Customdropdown from '../components/Customdropdown'
 import DescBar from '../components/DescBar'
 import NavBar from '../components/NavBar'
 import VerticalSwipeToSlide from '../components/VerticalSlide'
+import Daily from '../components/stats/Daily'
 
 
 
 
 const Desarrollo = () => {
+
+     let _data = [
+          {
+               label: 'Apertura',
+               backgroundColor:"#0C8530",
+               pointRadius: 6,
+               
+               data: [
+                   7, 8, 8, 9, 8, 10, 7
+               ],
+           },
+
+           {
+               label: 'Cierre',
+               backgroundColor:  "#FF8A01",
+               pointRadius: 6,
+               
+               data: [
+                   19, 18, 20, 18, 20, 21, 20
+               ],
+           }
+     ]
+    
+
      return (
           <div className="container">
                <NavBar/>
                <div className="containerdash">
                     <div className="panelDesarrollos">
                          <h2>APERTURA Y CIERRE</h2>
-                         
+                         <Daily data={_data}/>
                     </div>
                     <div className="panelStats">
                          <div className="asesores">
                               <div className="titleAsesores">
                                    <h2>ASESORES HORAS DE ATENCIÓN</h2>
-                                   <Customdropdown
-                                   items={[
-                                        { value: "Últimos 30 días", id: 1 },
-                                        { value: "Últimos 7 días", id: 2 },
-                                        { value: "Hoy", id: 3 }
-                                      ]}
-                              />
+                                   
                               <div className="labelFilter">
                                    <p>Mejores asesores <span>Últimos 30 días</span></p>
                               </div>

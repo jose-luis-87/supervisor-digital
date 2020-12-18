@@ -6,38 +6,156 @@ import Edificio from './Edificio';
 
 export const CardDesarrollo = (props) => {
 
-
+     const { bgcolor,  name } = props;
 
     return (
         
              <div className="slideContent">
-                               <h2>{props.name}</h2>
+                               <h2>{name}</h2>
                                <div className="supervisor">
                                     <div className="title">
                                        <h4>SUPERVISOR DIGITAL</h4>  
                                     </div>
                                     
-                                    <div className="iconCam">
-                                         <VideocamIcon width={28}/>
-                                         <p>Activo</p>
-                                    </div>
+                                    {(() => {
+
+  
+
+                                        switch (bgcolor) {
+
+                                        case '#00C853':
+
+                                        return (
+
+                                                  
+                                             <div className="iconCam">
+                                                  <VideocamIcon width={28} style={{ color: "#00C853" }} />
+                                                  <p>Activo</p>
+                                              </div>
+
+                                        )
+
+
+                                        case '#FF8A01':
+
+                                        return (
+
+                                             <div className="iconCam">
+                                                  <VideocamOffIcon width={28} style={{ color: "#FF8A01" }} />
+                                                  <p>Inactivo</p>
+                                             </div>
+
+                                        )
+
+                                        default:
+
+                                        return (
+
+                                             <div></div>
+
+                                        )
+
+                                        }
+
+
+
+                                        })()}
+
+                                    
                                </div>
                                <div className="persons">
                                     <div className="title">
                                        <h4><span>4</span> personas</h4>
                                     </div>
+                              {(() => {
+
+  
+
+                                        switch (bgcolor) {
+
+                                        case '#00C853':
+
+                                        return (
+
+                                             <div className="iconCam">
+                                                  <LocationOnIcon width={20} style={{ opacity:1 }} />
+                                                  <p>Activo</p>
+                                             </div>
+                                             
+
+                                        )
+
+
+                                        case '#FF8A01':
+
+                                        return (
+
+                                             <div className="iconCam">
+                                                  <LocationOnIcon width={20} style={{ opacity: 0.4 }} />
+                                                  <p>Inactivo</p>
+                                             </div>
+                                        
+
+                                        )
+
+                                        default:
+
+                                        return (
+
+                                             <div></div>
+
+                                        )
+
+                                        }
+
+
+
+                                        })()}      
                                     
-                                    <div className="iconCam">
-                                         <LocationOnIcon width={20}/>
-                                         <p>Activo</p>
-                                    </div>
                                </div>
+                               {(() => {
+
+  
+
+                                        switch (bgcolor) {
+
+                                        case '#00C853':
+
+                                        return (
+
+                                                  
+                                             <div className="open">
+                                              <p>Abierto</p>
+                                             </div>
+                                        )
+
+
+                                        case '#FF8A01':
+
+                                        return (
+
+                                             <div className="close">
+                                                  <p>Cerrado</p>
+                                             </div>
+
+                                        )
+
+                                        default:
+
+                                        return (
+
+                                             <div></div>
+
+                                        )
+
+                                        }
+
+
+
+                                        })()}
                                
                                
-                               <div className="open">
-                                    <p>Abierto</p>
-                               </div>
-                               <Edificio width={100} opacity={0.4} className="edificio"/>
+                               
                           </div>  
         
     )

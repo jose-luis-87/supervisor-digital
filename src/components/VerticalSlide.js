@@ -75,10 +75,11 @@ export default class VerticalSwipeToSlide extends Component {
       dots: false,
       infinite: false,
       slidesToShow: 4,
-      slidesToScroll: 1,
+      slidesToScroll: 3,
       vertical: true,
       verticalSwiping: true,
       swipeToSlide: true,
+      focusOnSelect: false,
       
       beforeChange: function(currentSlide, nextSlide) {
         console.log("before change", currentSlide, nextSlide);

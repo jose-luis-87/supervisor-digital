@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import Edificio from './Edificio';
-import VideocamIcon  from '@material-ui/icons/Videocam';
-import VideocamOffIcon from '@material-ui/icons/VideocamOff';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
 import { CardDesarrollo } from "./CardDesarrollo";
 
 
@@ -16,55 +12,63 @@ const data = [
        activo: true,
        personas: 4,
        abierto: true,
+       bgcolor: "#00C853"
   },
   {
        id: 2,
-       name: 'PLUTARCO',
+       name: 'CUAUHTÉMOC',
        activo: true,
        personas: 0,
        abierto: true,
+       bgcolor: "#FF8A01"
   },
   {
        id: 3,
-       name: 'PLUTARCO',
+       name: 'CENTENARIO',
        activo: true,
        personas: 0,
        abierto: true,
+       bgcolor: "#FF8A01"
   },
   {
        id: 4,
-       name: 'PLUTARCO',
+       name: 'CALLE 4',
        activo: true,
        personas: 0,
        abierto: true,
+       bgcolor: "#FF8A01"
   },
   {
        id: 5,
-       name: 'PLUTARCO',
+       name: 'GRANJAS',
        activo: true,
        personas: 4,
        abierto: true,
+       bgcolor: "#FF8A01"
   },
   {
        id: 6,
-       name: 'PLUTARCO',
+       name: 'NORTE 25',
        activo: true,
        personas: 0,
        abierto: true,
+       bgcolor: "#FF8A01"
   },
   {
        id: 7,
-       name: 'PLUTARCO',
+       name: 'CANTERA',
        activo: true,
        personas: 0,
        abierto: true,
+       bgcolor: "#FF8A01"
   },
   {
        id: 8,
-       name: 'PLUTARCO',
+       name: 'TINTORETO',
        activo: true,
        personas: 0,
        abierto: true,
+       bgcolor: "#FF8A01"
   }
 ]
 
@@ -74,17 +78,24 @@ export default class MultipleItems extends Component {
       
       className: "center",
       infinite: true,
-      
+      focusOnSelect: false,
       slidesToShow: 4,
       swipeToSlide: true,
     };
+    function GotoLink(url) {
+     window.location.href = url;
+      }
+ 
     return (
       <div className="wrapperSlider">
         
         <Slider {...settings} >
         {data.map(desarrollo=>(
-                          
-                            <CardDesarrollo name={desarrollo.name}/>
+                    
+               
+                      <CardDesarrollo name={desarrollo.name}  bgcolor={desarrollo.bgcolor} />
+                    
+                  
                          
                           
                  ))

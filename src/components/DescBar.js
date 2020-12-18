@@ -18,7 +18,7 @@ const DescBar = () => {
                                    </div>
                                    
                                    <div className="icon">
-                                        <VideocamIcon width={28}/>
+                                        <VideocamIcon width={28} style={{ color: "#00C853" }}/>
                                         <p>Activos</p>
                                    </div>
                               </div>
@@ -27,7 +27,7 @@ const DescBar = () => {
                                       <h3>10</h3>
                                    </div>
                                    <div className="icon">
-                                        <VideocamOffIcon width={28}/>
+                                        <VideocamOffIcon width={28} style={{ color: "#FF8A01" }}/>
                                         <p>Inactivos</p>
                                    </div>
                               </div>
