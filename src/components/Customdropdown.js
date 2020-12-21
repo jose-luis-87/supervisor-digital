@@ -26,36 +26,36 @@ export default class Customdropdown extends Component {
         
         return (
             <div className="select-box--box">
-        <div className="select-box--container">
-          <div className="select-box--selected-item">
-            {this.state.selectedItem.value}
-          </div>
-          <div className="select-box--arrow" onClick={this.dropdown}>
-            <span
-              className={`${
-                this.state.showItems
-                  ? "select-box--arrow-up"
-                  : "select-box--arrow-down"
-              }`}
-            />
-          </div>
+                <div className="select-box--container">
+                  <div className="select-box--selected-item">
+                    {this.state.selectedItem.value}
+                  </div>
+                  <div className="select-box--arrow" onClick={this.dropdown}>
+                    <span
+                      className={`${
+                        this.state.showItems
+                          ? "select-box--arrow-up"
+                          : "select-box--arrow-down"
+                      }`}
+                    />
+                  </div>
 
-          <div
-            style={{ display: this.state.showItems ? "block" : "none" }}
-            className={"select-box--items"}
-          >
-            {this.state.items.map(item => (
-              <div
-                key={item.id}
-                onClick={() => this.selectItem(item)}
-                className={this.state.selectedItem === item ? "selected" : ""}
-              >
-                {item.value}
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+                  <div
+                    style={{ display: this.state.showItems ? "block" : "none" }}
+                    className={"select-box--items"}
+                  >
+                    {this.state.items.map(item => (
+                      <div
+                        key={item.id}
+                        onClick={() => this.selectItem(item)}
+                        className={this.state.selectedItem === item ? "selected" : ""}
+                      >
+                        {item.value}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+            </div>
         )
     }
 }

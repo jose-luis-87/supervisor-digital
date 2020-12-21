@@ -10,13 +10,13 @@ export default class LineGraph extends Component {
     chartRef = React.createRef();
 
     componentDidMount(){
-        const dailyChart = this.chartRef.current.getContext("2d");
+        const monthChart = this.chartRef.current.getContext("2d");
 
-        new Chart(dailyChart,
+        new Chart(monthChart,
             {
                 type: "line",
                 data: {
-                    labels: ["lunes", "martes"],
+                    labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
                     datasets: this.props.data
                 },
 
@@ -29,8 +29,8 @@ export default class LineGraph extends Component {
                     
                     layout: {
                             padding: {
-                                left: 200,
-                                right: 200,
+                                left: 20,
+                                right: 30,
                                 top: 0,
                                 bottom: 0
                             },
@@ -97,7 +97,7 @@ export default class LineGraph extends Component {
         return (
             <div className="wrapperChart">
                 <canvas
-                    id="dailyChart"
+                    id="monthChart"
                     ref={this.chartRef}
                 
                 />

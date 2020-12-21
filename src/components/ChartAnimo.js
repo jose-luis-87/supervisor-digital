@@ -21,7 +21,6 @@ const data = [
 ]
 
 
-
 export const ChartAnimo = () => {
    
     return (
@@ -50,13 +49,6 @@ export const ChartAnimo = () => {
             
             </div>
             
-            
-
-            
-        
         ))
-           
-       
-        
     )
 }

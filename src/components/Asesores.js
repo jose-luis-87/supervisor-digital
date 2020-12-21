@@ -2,7 +2,7 @@ import React from 'react';
 import imgUser from '../img/user.jpg';
 import { ProgressBar } from './progressbar/ProgressBar';
 
-import 'swiper/swiper.scss';
+
 
 const data = [
      {
@@ -69,16 +69,13 @@ const data = [
 ]
 
 function Asesores() {
-    
-     
+
      return (
           
                <div className="asesoresContainer">
                     
                     {data.map(asesor=>(
-                         
 
-                         
                               <div className="cardUser">
                                    <div className="user">
                                         <div className="avatar">
@@ -91,13 +88,11 @@ function Asesores() {
                                    </div> 
                                    <ProgressBar key={asesor.id} bgcolor={asesor.bgcolor} promedio={asesor.promedio}/>
                               </div>
-                         
-                         
+
                     ))
                }
                </div>
-               
-          
+
      )
 }
 

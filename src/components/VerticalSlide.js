@@ -70,12 +70,15 @@ const data = [
 ]
 
 export default class VerticalSwipeToSlide extends Component {
+
+
+     
   render() {
     const settings = {
       dots: false,
       infinite: false,
       slidesToShow: 4,
-      slidesToScroll: 3,
+      slidesToScroll:1,
       vertical: true,
       verticalSwiping: true,
       swipeToSlide: true,

@@ -2,13 +2,12 @@ import React from 'react'
 import VideocamIcon  from '@material-ui/icons/Videocam';
 import VideocamOffIcon from '@material-ui/icons/VideocamOff';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
-import Edificio from './Edificio';
 
 export const CardDesarrollo = (props) => {
 
      const { bgcolor,  name } = props;
 
-    return (
+     return (
         
              <div className="slideContent">
                                <h2>{name}</h2>
@@ -18,8 +17,6 @@ export const CardDesarrollo = (props) => {
                                     </div>
                                     
                                     {(() => {
-
-  
 
                                         switch (bgcolor) {
 
@@ -57,11 +54,8 @@ export const CardDesarrollo = (props) => {
 
                                         }
 
-
-
-                                        })()}
-
-                                    
+                                    })()}
+ 
                                </div>
                                <div className="persons">
                                     <div className="title">

@@ -58,14 +58,6 @@ body {
      }
 }
 
-.wrapperChart {
-     margin: 20px 20px;
-     height: 400px;
-     canvas{
-          background-color: #263238;
-          border-radius: 16px;
-     }
-}
 
 .columGraphic{
      background-color: $green-global;
@@ -555,6 +547,9 @@ body {
 
 .titleAnimo {
      padding: 0px 0px 0px 40px;
+     h2{
+          margin: 0px 0px 32px 0px;
+     }
 }
 
 .felices, .neutrales, .molestas {
@@ -591,6 +586,75 @@ body {
           font-size: 40px;
           margin: 12px 0px 0px 0px;
           color: $yellow-btn;
+     }
+}
+
+.buttonsFilter{
+     display: flex;
+     flex-wrap: nowrap;
+     align-items: center;
+}
+
+.btnFilter{
+     height: 30px;
+     border: none;
+     background-color: $yellow-btn;
+     width: 140px;
+     margin: 0px 12px 0px 0px ;
+     border-radius: 50px;
+     color: $bg-dark-color;
+     font-weight: bold;
+     text-align: center;
+
+     p{
+          margin: 6px auto;
+     }
+}
+
+.dataBar{
+     margin-top: 14px;
+     height: 420px;
+     font-size: 8px;
+     width:4%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: flex-end;
+     p{
+          height: 3%;
+     }
+     div{
+          border-radius: 16px;
+          height: 30%;
+          width: 10px;
+     }
+}
+
+.orangeBar{
+     background-color: $orange-global;
+}
+
+.blueBar{
+     background-color: $blue-global;
+}
+
+.greenBar{
+     background-color: $green-global;
+}
+
+.stats{
+     display: flex;
+     flex-wrap: nowrap;
+     
+}
+
+.wrapperChart {
+     width: 90%;
+     margin: 20px 20px;
+     height: 480px;
+     
+     canvas{
+          background-color: #263238;
+          border-radius: 16px;
      }
 }
 

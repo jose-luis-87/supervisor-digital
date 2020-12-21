@@ -1,8 +1,6 @@
 import React from 'react'
 import Slider from 'react-slick'
-import Edificio from './Edificio';
 import VideocamIcon  from '@material-ui/icons/Videocam';
-import VideocamOffIcon from '@material-ui/icons/VideocamOff';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 const data = [
@@ -109,7 +107,7 @@ const SliderHome = () => {
                                <div className="open">
                                     <p>Abierto</p>
                                </div>
-                               <Edificio width={170} opacity={0.2} className="edificio"/>
+                               
                                
                           </div>
                      

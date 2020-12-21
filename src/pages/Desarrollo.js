@@ -4,11 +4,11 @@ import SlideDesarrollos from '../components/SlideDesarrollos'
 import VerticalSlide from '../components/VerticalSlide'
 import { ChartAnimo } from '../components/ChartAnimo'
 
-import Customdropdown from '../components/Customdropdown'
-import DescBar from '../components/DescBar'
+
 import NavBar from '../components/NavBar'
 import VerticalSwipeToSlide from '../components/VerticalSlide'
 import Daily from '../components/stats/Daily'
+import { Stats } from '../components/stats/Stats'
 
 
 
@@ -44,19 +44,16 @@ const Desarrollo = () => {
                <div className="containerdash">
                     <div className="panelDesarrollos">
                          <h2>APERTURA Y CIERRE</h2>
-                         <Daily data={_data}/>
+                         <Stats/>
                     </div>
                     <div className="panelStats">
                          <div className="asesores">
                               <div className="titleAsesores">
                                    <h2>ASESORES HORAS DE ATENCIÓN</h2>
-                                   
                               <div className="labelFilter">
                                    <p>Mejores asesores <span>Últimos 30 días</span></p>
                               </div>
                               </div>
-                              
-                              
                               <VerticalSlide/>
                          </div>
                          <div className="chartAnimo">
