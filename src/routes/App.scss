@@ -8,7 +8,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: $white-text;
     
-    
 }
 
 .container {
@@ -187,6 +186,20 @@ body {
      z-index: 20;
      background-color: $bg-dark-color;
      padding: 0px 0px 0px 40px;
+     
+}
+
+.titleAsesoresDes{
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     z-index: 20;
+     background-color: $bg-dark-color;
+     padding: 0px 0px 0px 40px;
+     h2{
+          margin-bottom: 32px;
+     }
+     
 }
 
 .labelFilter{
@@ -547,8 +560,12 @@ body {
 
 .titleAnimo {
      padding: 0px 0px 0px 40px;
+}
+
+.titleAnimoDes{
+     padding: 0px 0px 0px 40px;
      h2{
-          margin: 0px 0px 32px 0px;
+          margin-bottom: 40px;
      }
 }
 
@@ -658,5 +675,29 @@ body {
      }
 }
 
+.wrapperArrows{
+     display: flex;
+     flex-wrap: nowrap;
+     padding: 20px 10px 0px 10px;
+}
+
+.arrowIzq{
+     width: 50%;
+     display: flex;
+     justify-content: flex-start;
+}
+
+.arrowDer{
+     width: 50%;
+     display: flex;
+     justify-content: flex-end;
+}
+
+.arrowDown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     margin-bottom: 18px;
+}
 
 

@@ -3,6 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { CardDesarrollo } from "./CardDesarrollo";
+import ArrowDown from "./ArrowDown";
+import ArrowBack from "./ArrowBack";
+import Arrow from "./Arrow";
 
 
 const data = [
@@ -81,11 +84,14 @@ export default class MultipleItems extends Component {
       focusOnSelect: false,
       slidesToShow: 4,
       swipeToSlide: true,
+      nextArrow: <Arrow />,
+      
+      prevArrow: <ArrowBack />,
     };
-    function GotoLink(url) {
-     window.location.href = url;
-      }
- 
+
+    
+      
+      
     return (
       <div className="wrapperSlider">
         

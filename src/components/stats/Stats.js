@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef} from 'react';
 import Daily from "./Daily"
 import Week from "./Week"
 import Month from "./Month"
+import { ArrowsBar } from '../ArrowsBar';
 
 export const Stats = () => {
 
@@ -129,7 +130,7 @@ let _dataMonth = [
 
     return (
         <div id="panelCharts" className="wrapperCharts" ref={chartsRef} >
-                <div className="buttonsFilter">
+            <div className="buttonsFilter">
                     <div onClick={setChart} data-chart={1} className={`${"btnFilter"} ${stateChart.chart === 1 ? "btnActive": ""}`}>
                         <p>Hoy</p>
                     </div>
@@ -140,9 +141,9 @@ let _dataMonth = [
                         <p>Últimos 30 días</p>
                     </div>
                     
-                </div>
+            </div>
                 
-
+            <ArrowsBar/>
             <div className="stats">
                 <div className="dataBar">
                     <p>12 A.M.</p>

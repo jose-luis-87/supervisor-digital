@@ -48,7 +48,7 @@ const Desarrollo = () => {
                     </div>
                     <div className="panelStats">
                          <div className="asesores">
-                              <div className="titleAsesores">
+                              <div className="titleAsesoresDes">
                                    <h2>ASESORES HORAS DE ATENCIÓN</h2>
                               <div className="labelFilter">
                                    <p>Mejores asesores <span>Últimos 30 días</span></p>
@@ -57,7 +57,7 @@ const Desarrollo = () => {
                               <VerticalSlide/>
                          </div>
                          <div className="chartAnimo">
-                              <div className="titleAnimo">
+                              <div className="titleAnimoDes">
                                    <h2>PROMEDIO ESTADO DE ÁNIMO</h2>
                                    <div className="labelAnimo">
                                         <p>Afluencia <span>Últimos 30 días</span></p>

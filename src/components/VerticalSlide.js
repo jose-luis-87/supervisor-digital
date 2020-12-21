@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 
 import imgUser from '../img/user.jpg';
+import ArrowDown from "./ArrowDown";
 import { ProgressBar } from './progressbar/ProgressBar';
 
 
@@ -71,6 +72,14 @@ const data = [
 
 export default class VerticalSwipeToSlide extends Component {
 
+     constructor(props) {
+          super(props);
+          this.next = this.next.bind(this);
+     }
+
+     next() {
+          this.slider.slickNext();
+     }
 
      
   render() {
@@ -94,7 +103,7 @@ export default class VerticalSwipeToSlide extends Component {
     return (
       <div className="asesoresContainer">
         
-        <Slider {...settings} >
+        <Slider ref={ c => (this.slider = c)} {...settings} >
         {data.map(asesor=>(
                          
 
@@ -116,6 +125,9 @@ export default class VerticalSwipeToSlide extends Component {
                ))
           }
         </Slider>
+          <div className="arrowDown" onClick={this.next}>
+               <ArrowDown width={30}/>
+          </div>
       </div>
     );
   }

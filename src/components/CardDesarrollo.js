@@ -6,10 +6,14 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 export const CardDesarrollo = (props) => {
 
      const { bgcolor,  name } = props;
+     function GotoLink(url) {
+          window.location.href = url;
+           }
+     
 
      return (
         
-             <div className="slideContent">
+             <div className="slideContent" onClick={()=>{GotoLink("/desarrollo")}}>
                                <h2>{name}</h2>
                                <div className="supervisor">
                                     <div className="title">

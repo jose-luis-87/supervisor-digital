@@ -3,9 +3,13 @@ import LogoGreen from './LogoGreen'
 import SearchIcon from '@material-ui/icons/Search';
 
 const NavBar = () => {
+     function GotoLink(url) {
+          window.location.href = url;
+           }
+     
      return (
           <div className="navbar">
-               <div className="logo">
+               <div className="logo"  onClick={()=>{GotoLink("/home")}}>
                     <LogoGreen width={100}/>
                </div>
                <div className="search">
