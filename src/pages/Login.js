@@ -45,7 +45,7 @@ export default class Login extends Component {
                                    />
                                    <div className="containerBtn">
                                         <p>¿Olvidaste tu contraseña?</p>
-                                        <div className="btnSesion" onClick={()=>  GotoLink('/home')}>Iniciar sesión</div> 
+                                        <div className="btnSesion" onClick={()=>  GotoLink('#/home')}>Iniciar sesión</div> 
                                    </div>
                                    
                               </form>

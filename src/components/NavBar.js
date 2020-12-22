@@ -9,7 +9,7 @@ const NavBar = () => {
      
      return (
           <div className="navbar">
-               <div className="logo"  onClick={()=>{GotoLink("/home")}}>
+               <div className="logo"  onClick={()=>{GotoLink("#/home")}}>
                     <LogoGreen width={100}/>
                </div>
                <div className="search">

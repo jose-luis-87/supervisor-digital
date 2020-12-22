@@ -13,7 +13,7 @@ export const CardDesarrollo = (props) => {
 
      return (
         
-             <div className="slideContent" onClick={()=>{GotoLink("/desarrollo")}}>
+             <div className="slideContent" onClick={()=>{GotoLink("#/desarrollo")}}>
                                <h2>{name}</h2>
                                <div className="supervisor">
                                     <div className="title">
