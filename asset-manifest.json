@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/supervisor-digital/static/css/main.3e85db3e.chunk.css",
-    "main.js": "/supervisor-digital/static/js/main.b9d05e16.chunk.js",
-    "main.js.map": "/supervisor-digital/static/js/main.b9d05e16.chunk.js.map",
-    "runtime-main.js": "/supervisor-digital/static/js/runtime-main.f8b7b485.js",
-    "runtime-main.js.map": "/supervisor-digital/static/js/runtime-main.f8b7b485.js.map",
-    "static/css/2.d5b38db5.chunk.css": "/supervisor-digital/static/css/2.d5b38db5.chunk.css",
-    "static/js/2.3fa1d2ae.chunk.js": "/supervisor-digital/static/js/2.3fa1d2ae.chunk.js",
-    "static/js/2.3fa1d2ae.chunk.js.map": "/supervisor-digital/static/js/2.3fa1d2ae.chunk.js.map",
-    "index.html": "/supervisor-digital/index.html",
-    "static/css/2.d5b38db5.chunk.css.map": "/supervisor-digital/static/css/2.d5b38db5.chunk.css.map",
-    "static/css/main.3e85db3e.chunk.css.map": "/supervisor-digital/static/css/main.3e85db3e.chunk.css.map",
-    "static/js/2.3fa1d2ae.chunk.js.LICENSE.txt": "/supervisor-digital/static/js/2.3fa1d2ae.chunk.js.LICENSE.txt",
-    "static/media/slick-theme.css": "/supervisor-digital/static/media/slick.c94f7671.ttf"
+    "main.css": "/static/css/main.3e85db3e.chunk.css",
+    "main.js": "/static/js/main.b9d05e16.chunk.js",
+    "main.js.map": "/static/js/main.b9d05e16.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.63718ab2.js",
+    "runtime-main.js.map": "/static/js/runtime-main.63718ab2.js.map",
+    "static/css/2.165ff965.chunk.css": "/static/css/2.165ff965.chunk.css",
+    "static/js/2.3fa1d2ae.chunk.js": "/static/js/2.3fa1d2ae.chunk.js",
+    "static/js/2.3fa1d2ae.chunk.js.map": "/static/js/2.3fa1d2ae.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.165ff965.chunk.css.map": "/static/css/2.165ff965.chunk.css.map",
+    "static/css/main.3e85db3e.chunk.css.map": "/static/css/main.3e85db3e.chunk.css.map",
+    "static/js/2.3fa1d2ae.chunk.js.LICENSE.txt": "/static/js/2.3fa1d2ae.chunk.js.LICENSE.txt",
+    "static/media/slick-theme.css": "/static/media/slick.c94f7671.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.f8b7b485.js",
-    "static/css/2.d5b38db5.chunk.css",
+    "static/js/runtime-main.63718ab2.js",
+    "static/css/2.165ff965.chunk.css",
     "static/js/2.3fa1d2ae.chunk.js",
     "static/css/main.3e85db3e.chunk.css",
     "static/js/main.b9d05e16.chunk.js"
